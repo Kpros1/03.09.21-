@@ -4,6 +4,12 @@
 3. подключить open CV
    3.1 нажать на имя проекта и зайтм в свойства
    ![image](https://user-images.githubusercontent.com/90038602/131995796-155ffdd4-56a2-444a-a655-a4b466f03064.png)
+   3.2
+   ![image](https://user-images.githubusercontent.com/90038602/131996109-80c9b7fb-4ae5-413e-a752-97de93e47267.png)
+   3.3
+   ![image](https://user-images.githubusercontent.com/90038602/131996185-1d44f9c5-a896-4ba0-b939-ecb19f02d495.png)
+
+
    
 
 
