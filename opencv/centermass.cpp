@@ -20,8 +20,8 @@ int main()
 	blur(src_gray, src_gray, Size(3, 3));
 	double lower_thresh_val = 100, high_thresh_val = 300;
 	Canny(src_gray, canny_output, lower_thresh_val, high_thresh_val, 3);
-	namedWindow("Серое изображение", WINDOW_AUTOSIZE);
-	imshow("Серое изображение", canny_output);
+	namedWindow("Г‘ГҐГ°Г®ГҐ ГЁГ§Г®ГЎГ°Г Г¦ГҐГ­ГЁГҐ", WINDOW_AUTOSIZE);
+	imshow("Г‘ГҐГ°Г®ГҐ ГЁГ§Г®ГЎГ°Г Г¦ГҐГ­ГЁГҐ", canny_output);
 	imwrite("canny_output.jpeg", canny_output);
 	RNG rng(12345);
 	vector<vector<Point>>contours;
@@ -37,7 +37,7 @@ mu[i] = moments(contours[i], false);
 		mc[i] = Point2f(mu[i].m10 / mu[i].m00, mu[i].m01 / mu[i].m00);
 	}
 	for (int i = 0;i < contours.size(); i++) {
-		printf("контур № %d:цент масс - x = %.2f y = %.2f; длина - %.2f \n", i, mu[i].m10 / mu[i].m00, mu[i].m01 / mu[i].m00, arcLength(contours[i], true));
+		printf("ГЄГ®Г­ГІГіГ° В№ %d:Г¶ГҐГ­ГІ Г¬Г Г±Г± - x = %.2f y = %.2f; Г¤Г«ГЁГ­Г  - %.2f \n", i, mu[i].m10 / mu[i].m00, mu[i].m01 / mu[i].m00, arcLength(contours[i], true));
 	}
 	
 
