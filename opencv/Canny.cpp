@@ -19,8 +19,8 @@ int main()
 	blur(src_gray, src_gray, Size(3, 3));
 	double lower_thresh_val = 100, high_thresh_val = 300;
 	Canny(src_gray, canny_output, lower_thresh_val, high_thresh_val, 3);
-	namedWindow("Ρεπξε θηξαπΰζενθε", WINDOW_AUTOSIZE);
-	imshow("Ρεπξε θηξαπΰζενθε", canny_output);
+	namedWindow("Γ‘Γ¥Γ°Γ®Γ¥ Γ¨Γ§Γ®Γ΅Γ°Γ Γ¦Γ¥Γ­Γ¨Γ¥", WINDOW_AUTOSIZE);
+	imshow("Γ‘Γ¥Γ°Γ®Γ¥ Γ¨Γ§Γ®Γ΅Γ°Γ Γ¦Γ¥Γ­Γ¨Γ¥", canny_output);
 	imwrite("canny_output.jpeg", canny_output);
 	waitKey(0);
 	system("pause");
