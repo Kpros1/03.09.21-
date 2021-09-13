@@ -10,14 +10,10 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-
 using namespace cv;
 using namespace std;
-
 Mat img;
-
 int main()
-
 {
 	setlocale(LC_ALL, "Russian");
 	char filename[80];
@@ -42,5 +38,7 @@ int main()
 	
 	
 Заккидаваем картинку в папку с проектом 
+	
+	
 Запускаем программу
 ![image](https://user-images.githubusercontent.com/90038602/133037795-5f7f342b-051a-493d-a085-565731de8e03.png)
