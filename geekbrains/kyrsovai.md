@@ -7,7 +7,7 @@
 
 
 
-скачал нужные библеотеки 
+скачал нужные библиотеки
 
 
 ![image](https://user-images.githubusercontent.com/90038602/136934490-d46263cc-3e20-4479-be38-b97cbdd77b41.png)
