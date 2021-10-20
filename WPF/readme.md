@@ -7,4 +7,8 @@ Desktop application. Программное обеспечение, предна
 Элемент управления
 Control. Элемент, который предназначен для взаимодействия с пользователем или для отображения ему какой-либо информации
 
-![image](https://user-images.githubusercontent.com/90038602/137891069-fd4ca2fb-0021-42b4-b7fa-ff98871a1133.png)
+
+
+
+![image](https://user-images.githubusercontent.com/90038602/138072736-ba3b6d2b-1503-4d34-8e70-ebd43b016c21.png)
+
