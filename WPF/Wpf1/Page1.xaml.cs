@@ -23,6 +23,7 @@ namespace Wpf1
         public Page1()
         {
             InitializeComponent();
+            DGridHotels.ItemsSource = ToursBase1Entities.GetContext().Hotel.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -36,6 +37,11 @@ namespace Wpf1
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new Page4());
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
