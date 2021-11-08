@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Wpf1
 {
     /// <summary>
-    /// Логика взаимодействия для Page2.xaml
+    /// Логика взаимодействия для AddEditPage.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class AddEditPage : Window
     {
-        public Page2()
+        public AddEditPage()
         {
             InitializeComponent();
-            ComboCountries.ItemsSource = ToursBase1Entities.GetContext().Country.ToList();
-        }
-
-        private void BtnSave_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

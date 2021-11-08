@@ -41,7 +41,17 @@ namespace Wpf1
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
 
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Page2());
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Page4());
         }
     }
 }

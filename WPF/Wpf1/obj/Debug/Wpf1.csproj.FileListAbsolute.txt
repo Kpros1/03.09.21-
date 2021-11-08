@@ -51,3 +51,5 @@ C:\Users\Администратор\Desktop\мусор\Новая папка\-18
 C:\Users\Администратор\Desktop\мусор\Новая папка\-185-Belyankin\WPF\Wpf1\obj\Debug\Wpf1.csproj.GenerateResource.cache
 C:\Users\Администратор\Desktop\мусор\Новая папка\-185-Belyankin\WPF\Wpf1\obj\Debug\Wpf1.csproj.CoreCompileInputs.cache
 C:\Users\Администратор\Desktop\мусор\Новая папка\-185-Belyankin\WPF\Wpf1\obj\Debug\Wpf1.csproj.CopyComplete
+C:\Users\Администратор\Desktop\мусор\Новая папка\-185-Belyankin\WPF\Wpf1\obj\Debug\AddEditPage.g.cs
+C:\Users\Администратор\Desktop\мусор\Новая папка\-185-Belyankin\WPF\Wpf1\obj\Debug\AddEditPage.baml
