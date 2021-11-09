@@ -26,32 +26,28 @@ namespace Wpf1
             DGridHotels.ItemsSource = ToursBase1Entities.GetContext().Hotel.ToList();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new Page2());
-        }
-        private void Button_Click3(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new Page3());
-        }
-        private void Button_Click4(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new Page4());
-        }
-
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-            
+            Manager.MainFrame.Navigate(new Page2((sender as Button).DataContext as Hotel));
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Page2());
+            Manager.MainFrame.Navigate(new Page2(null));
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Page4());
+            
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                ToursBase1Entities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGridHotels.ItemsSource = ToursBase1Entities.GetContext().Hotel.ToList();
+            }
         }
     }
 }
