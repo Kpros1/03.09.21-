@@ -37,9 +37,37 @@ namespace Wpf1
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
+
         {
-            
-        }
+            var hotelsForRemoving = DGridHotels.SelectedItems.Cast<Hotel>().ToList();
+
+            if (MessageBox.Show($"Вы точно хотите удалить следующие{hotelsForRemoving.Count()}элементов?", "Внимание",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    ToursBase1Entities.GetContext().Hotel.RemoveRange(hotelsForRemoving);
+                    ToursBase1Entities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены");
+                    DGridHotels.ItemsSource = ToursBase1Entities.GetContext().Hotel.ToList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+
+                }
+
+
+
+
+
+
+
+
+            }
+
+            }
+        
 
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
