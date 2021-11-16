@@ -14,7 +14,7 @@ namespace Wpf1
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
-    
+
     public partial class ToursBase1Entities : DbContext
     {
         private static ToursBase1Entities _context;
