@@ -1,0 +1,147 @@
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe.config
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\DesignXAMLZ.pdb
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\MaterialDesignColors.dll
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\MaterialDesignColors.pdb
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.csprojAssemblyReference.cache
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\MainWindow.g.cs
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\App.g.cs
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.cache
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.lref
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\App.baml
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\MainWindow.baml
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.g.resources
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.Properties.Resources.resources
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.GenerateResource.cache
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CoreCompileInputs.cache
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CopyComplete
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.exe
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ.pdb
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\EntityFramework.dll
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\System.Data.SQLite.dll
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\EntityFramework.xml
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\306-7\source\repos\DesignXAMLZ\bin\Debug\System.Data.SQLite.xml
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\DesignXAMLZ_Content.g.cs
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\AuthWindow.g.cs
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\AuthWindow.baml
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\UserPageWindow.g.cs
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\UserPageWindow.baml
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\UserList.g.cs
+C:\Users\306-7\source\repos\DesignXAMLZ\obj\Debug\UserList.baml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe.config
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\DesignXAMLZ.pdb
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.dll
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.dll
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignColors.dll
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.dll
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.dll
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.EF6.dll
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.Linq.dll
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.xml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.xml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignColors.pdb
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.xml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.xml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.csprojAssemblyReference.cache
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\AuthWindow.g.cs
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\MainWindow.g.cs
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserList.g.cs
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserPageWindow.g.cs
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\App.g.cs
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ_Content.g.cs
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.cache
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.lref
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\App.baml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\AuthWindow.baml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\MainWindow.baml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserList.baml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserPageWindow.baml
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.g.resources
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.Properties.Resources.resources
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.GenerateResource.cache
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CoreCompileInputs.cache
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CopyComplete
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.exe
+\\Pdc\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.pdb
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\AuthWindow.g.cs
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\MainWindow.g.cs
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserList.g.cs
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserPageWindow.g.cs
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\App.g.cs
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ_Content.g.cs
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.cache
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.lref
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.exe
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.pdb
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe.config
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\DesignXAMLZ.pdb
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.dll
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.dll
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignColors.dll
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.dll
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.dll
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.EF6.dll
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.Linq.dll
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.xml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.xml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignColors.pdb
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.xml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\bin\Debug\System.Data.SQLite.xml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\App.baml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\AuthWindow.baml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\MainWindow.baml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserList.baml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\UserPageWindow.baml
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.g.resources
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.Properties.Resources.resources
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.GenerateResource.cache
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CoreCompileInputs.cache
+\\192.168.1.1\студенты\185 - 1 группа\Волохов\Ревнивцев\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CopyComplete
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe.config
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\DesignXAMLZ.exe
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\DesignXAMLZ.pdb
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\EntityFramework.dll
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.dll
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\MaterialDesignColors.dll
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.dll
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\System.Data.SQLite.dll
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\System.Data.SQLite.EF6.dll
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\System.Data.SQLite.Linq.dll
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\EntityFramework.xml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\EntityFramework.SqlServer.xml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\MaterialDesignColors.pdb
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\MaterialDesignThemes.Wpf.xml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\bin\Debug\System.Data.SQLite.xml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.csprojAssemblyReference.cache
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\AuthWindow.g.cs
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\MainWindow.g.cs
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\UserList.g.cs
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\UserPageWindow.g.cs
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\App.g.cs
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ_Content.g.cs
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.cache
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ_MarkupCompile.lref
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\App.baml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\AuthWindow.baml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\MainWindow.baml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\UserList.baml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\UserPageWindow.baml
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.g.resources
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.Properties.Resources.resources
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.GenerateResource.cache
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CoreCompileInputs.cache
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.csproj.CopyComplete
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.exe
+\\Pdc\студенты\185 - 1 группа\Белянкин\DesignXAMLZ\obj\Debug\DesignXAMLZ.pdb
