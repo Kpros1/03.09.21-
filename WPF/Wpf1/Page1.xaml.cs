@@ -26,7 +26,7 @@ namespace Wpf1
             InitializeComponent();
             
           
-            DGridHotels.ItemsSource = ToursBase1Entities.GetContext().Hotel.ToList();
+           DGridHotels.ItemsSource = ToursBase1Entities.GetContext().Hotel.ToList();
 
             
         }

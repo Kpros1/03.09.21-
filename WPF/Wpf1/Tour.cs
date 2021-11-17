@@ -33,5 +33,15 @@ namespace Wpf1
         public virtual ICollection<Hotel> Hotel { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Type> Type { get; set; }
+
+        public string ActualText
+        {
+            get
+            {
+                return (IsActual) ? "Актуален" : "Завершен";
+
+            }
+        }
     }
+    
 }

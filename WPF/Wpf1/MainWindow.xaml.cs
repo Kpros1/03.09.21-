@@ -39,6 +39,7 @@ namespace Wpf1
                 var data = line.Split('\t');
                 var tempTour = new Tour
                 {
+                    
                     Name = data[0].Replace("\"", ""),
                     TicketCount = int.Parse(data[2]),
                     Price = decimal.Parse(data[3]),
