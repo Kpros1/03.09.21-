@@ -1,4 +1,5 @@
 # -185-Belyankin
+задание на практику https://github.com/Julia-Zhirnova/Uchebnaya_praktika_185.git
 
 git clone https://github.com/Kpros1/-185-Belyankin - клонирование
 
