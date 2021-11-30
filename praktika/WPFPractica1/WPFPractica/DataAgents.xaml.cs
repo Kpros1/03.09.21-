@@ -24,16 +24,17 @@ namespace WPFPractica
         public DataAgents()
         {
             InitializeComponent();
-            ListView.ItemsSource = PraktikaEntities.GetContext().Agents.ToList();
+            ListView.ItemsSource = PraktikaEntities.GetContext().ProductSale.ToList();
+            ListView.ItemsSource = PraktikaEntities.GetContext().Agent.ToList();
             var AgentType = new List<string>() { "Все типы" };
-            AgentType.AddRange(PraktikaEntities.GetContext().AgentTypes.Select(c => c.Title).ToList());
+            AgentType.AddRange(PraktikaEntities.GetContext().AgentType.Select(c => c.Title).ToList());
             TypeBox.ItemsSource = AgentType;
             TypeBox.SelectedIndex = 0;
             SortBox.SelectedIndex = 0;
-           // ImportTours();
+
         }
 
-     
+
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
             FrameWindow.MainFrame.Navigate(new AddAgent(null));
@@ -41,27 +42,20 @@ namespace WPFPractica
         }
 
 
-        //private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-       // {
-           // Update(TypeBox.Text, SortBox.Text, Search.Text);
-           // if (ListView.Items.Count == 0)
-            //{
-               // MessageBox.Show("Ничего не найдено");
-                //Search.Text = "";
-               // Update(TypeBox.Text, SortBox.Text, Search.Text);
-            //}
-
-        //}
-        private void test(object sender,KeyEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Update(TypeBox.Text, SortBox.Text, Search.Text);
-            if (ListView.Items.Count == 0)
-            {
-                MessageBox.Show("Ничего не найдено");
-            }
+
+            //  Update(TypeBox.Text, SortBox.Text, Search.Text);
+            // if (ListView.Items.Count == 0)
+            // {
+            //     MessageBox.Show("Ничего не найдено");
+            //    Search.Text = "";
+            //   Update(TypeBox.Text, SortBox.Text, Search.Text);
+            // }
+
         }
 
-     
+
         private void TypeBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Update(SortBox.Text, (TypeBox.SelectedItem as string).ToString());
@@ -71,13 +65,24 @@ namespace WPFPractica
         {
             Update((SortBox.SelectedItem as ComboBoxItem).Content.ToString(), TypeBox.Text);
         }
-
-        private void Update(string sort = "", string filt = "", string search = "")
+        private void Searchf(object sender, KeyEventArgs e)
         {
-            var data = PraktikaEntities.GetContext().Agents.ToList();
-            if (!string.IsNullOrEmpty(search) && !string.IsNullOrWhiteSpace(search))
+            if (e.Key == Key.Enter)
             {
-                data = data.Where(p => p.Email.ToLower().Contains(search.ToLower()) || p.Phone.ToLower().Contains(search.ToLower())).ToList();
+                Update(SortBox.Text, TypeBox.Text, SearchBox.Text);
+                if (ListView.Items.Count == 0)
+                {
+                    MessageBox.Show("Ничего не найдено");
+                }
+            }
+        }
+
+        public void Update(string sort = "", string filt = "", string searh = "")
+        {
+            var data = PraktikaEntities.GetContext().Agent.ToList();
+            if (!string.IsNullOrEmpty(searh) && !string.IsNullOrWhiteSpace(searh))
+            {
+                data = data.Where(p => p.Title.ToLower().Contains(searh.ToLower()) || p.Phone.ToLower().Contains(searh.ToLower())).ToList();
             }
             if (!string.IsNullOrEmpty(filt) && !string.IsNullOrWhiteSpace(filt))
             {
@@ -98,11 +103,11 @@ namespace WPFPractica
                 }
                 if (sort == "Размер скидки (по возрастанию)")
                 {
-                    data = data.OrderBy(p => p.Phone).ToList();
+                    data = data.OrderBy(p => p.Discount).ToList();
                 }
                 if (sort == "Размер скидки (по убыванию))")
                 {
-                    data = data.OrderByDescending(p => p.Phone).ToList();
+                    data = data.OrderByDescending(p => p.Discount).ToList();
                 }
                 if (sort == "Приоритет агента (по возрастанию)")
                 {
@@ -118,15 +123,15 @@ namespace WPFPractica
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            var hotelsForRemoving = ListView.SelectedItems.Cast<Agent>().ToList();
-            if (MessageBox.Show($"Вы точно хотите удалить следующие {hotelsForRemoving.Count()} элементов?", "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            var AgentsRemoving = ListView.SelectedItems.Cast<Agent>().ToList();
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {AgentsRemoving.Count()} элементов?", "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 try
                 {
-                    PraktikaEntities.GetContext().Agents.RemoveRange(hotelsForRemoving);
+                    PraktikaEntities.GetContext().Agent.RemoveRange(AgentsRemoving);
                     PraktikaEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
-                    ListView.ItemsSource = PraktikaEntities.GetContext().Agents.ToList();
+                    ListView.ItemsSource = PraktikaEntities.GetContext().Agent.ToList();
                 }
                 catch (Exception ex)
                 {
@@ -140,9 +145,9 @@ namespace WPFPractica
             FrameWindow.MainFrame.Navigate(new AddAgent((sender as Button).DataContext as Agent));
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
     }
 }

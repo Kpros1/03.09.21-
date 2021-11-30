@@ -16,9 +16,9 @@
     <Property Name="Logo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="Priority" Type="Int32" Nullable="false" />
     <NavigationProperty Name="AgentType" Relationship="Self.FK_Agent_AgentType" FromRole="Agent" ToRole="AgentType" />
-    <NavigationProperty Name="AgentPriorityHistories" Relationship="Self.FK_AgentPriorityHistory_Agent" FromRole="Agent" ToRole="AgentPriorityHistory" />
-    <NavigationProperty Name="ProductSales" Relationship="Self.FK_ProductSale_Agent" FromRole="Agent" ToRole="ProductSale" />
-    <NavigationProperty Name="Shops" Relationship="Self.FK_Shop_Agent" FromRole="Agent" ToRole="Shop" />
+    <NavigationProperty Name="AgentPriorityHistory" Relationship="Self.FK_AgentPriorityHistory_Agent" FromRole="Agent" ToRole="AgentPriorityHistory" />
+    <NavigationProperty Name="ProductSale" Relationship="Self.FK_ProductSale_Agent" FromRole="Agent" ToRole="ProductSale" />
+    <NavigationProperty Name="Shop" Relationship="Self.FK_Shop_Agent" FromRole="Agent" ToRole="Shop" />
   </EntityType>
   <EntityType Name="AgentPriorityHistory">
     <Key>
@@ -37,7 +37,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Image" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Agents" Relationship="Self.FK_Agent_AgentType" FromRole="AgentType" ToRole="Agent" />
+    <NavigationProperty Name="Agent" Relationship="Self.FK_Agent_AgentType" FromRole="AgentType" ToRole="Agent" />
   </EntityType>
   <EntityType Name="Material">
     <Key>
@@ -54,9 +54,9 @@
     <Property Name="Image" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="MaterialTypeID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="MaterialType" Relationship="Self.FK_Material_MaterialType" FromRole="Material" ToRole="MaterialType" />
-    <NavigationProperty Name="MaterialCountHistories" Relationship="Self.FK_MaterialCountHistory_Material" FromRole="Material" ToRole="MaterialCountHistory" />
-    <NavigationProperty Name="ProductMaterials" Relationship="Self.FK_ProductMaterial_Material" FromRole="Material" ToRole="ProductMaterial" />
-    <NavigationProperty Name="Suppliers" Relationship="Self.MaterialSupplier" FromRole="Material" ToRole="Supplier" />
+    <NavigationProperty Name="MaterialCountHistory" Relationship="Self.FK_MaterialCountHistory_Material" FromRole="Material" ToRole="MaterialCountHistory" />
+    <NavigationProperty Name="ProductMaterial" Relationship="Self.FK_ProductMaterial_Material" FromRole="Material" ToRole="ProductMaterial" />
+    <NavigationProperty Name="Supplier" Relationship="Self.MaterialSupplier" FromRole="Material" ToRole="Supplier" />
   </EntityType>
   <EntityType Name="MaterialCountHistory">
     <Key>
@@ -75,7 +75,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DefectedPercent" Type="Double" Nullable="false" />
-    <NavigationProperty Name="Materials" Relationship="Self.FK_Material_MaterialType" FromRole="MaterialType" ToRole="Material" />
+    <NavigationProperty Name="Material" Relationship="Self.FK_Material_MaterialType" FromRole="MaterialType" ToRole="Material" />
   </EntityType>
   <EntityType Name="Product">
     <Key>
@@ -91,9 +91,9 @@
     <Property Name="ProductionWorkshopNumber" Type="Int32" />
     <Property Name="MinCostForAgent" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <NavigationProperty Name="ProductType" Relationship="Self.FK_Product_ProductType" FromRole="Product" ToRole="ProductType" />
-    <NavigationProperty Name="ProductCostHistories" Relationship="Self.FK_ProductCostHistory_Product" FromRole="Product" ToRole="ProductCostHistory" />
-    <NavigationProperty Name="ProductMaterials" Relationship="Self.FK_ProductMaterial_Product" FromRole="Product" ToRole="ProductMaterial" />
-    <NavigationProperty Name="ProductSales" Relationship="Self.FK_ProductSale_Product" FromRole="Product" ToRole="ProductSale" />
+    <NavigationProperty Name="ProductCostHistory" Relationship="Self.FK_ProductCostHistory_Product" FromRole="Product" ToRole="ProductCostHistory" />
+    <NavigationProperty Name="ProductMaterial" Relationship="Self.FK_ProductMaterial_Product" FromRole="Product" ToRole="ProductMaterial" />
+    <NavigationProperty Name="ProductSale" Relationship="Self.FK_ProductSale_Product" FromRole="Product" ToRole="ProductSale" />
   </EntityType>
   <EntityType Name="ProductCostHistory">
     <Key>
@@ -135,7 +135,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DefectedPercent" Type="Double" />
-    <NavigationProperty Name="Products" Relationship="Self.FK_Product_ProductType" FromRole="ProductType" ToRole="Product" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_ProductType" FromRole="ProductType" ToRole="Product" />
   </EntityType>
   <EntityType Name="Shop">
     <Key>
@@ -157,9 +157,9 @@
     <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="QualityRating" Type="Int32" />
     <Property Name="SupplierType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Materials" Relationship="Self.MaterialSupplier" FromRole="Supplier" ToRole="Material" />
+    <NavigationProperty Name="Material" Relationship="Self.MaterialSupplier" FromRole="Supplier" ToRole="Material" />
   </EntityType>
-  <EntityType Name="sysdiagram">
+  <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />
     </Key>
@@ -306,67 +306,67 @@
     <End Role="Supplier" Type="Self.Supplier" Multiplicity="*" />
   </Association>
   <EntityContainer Name="PraktikaEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Agents" EntityType="Self.Agent" />
-    <EntitySet Name="AgentPriorityHistories" EntityType="Self.AgentPriorityHistory" />
-    <EntitySet Name="AgentTypes" EntityType="Self.AgentType" />
-    <EntitySet Name="Materials" EntityType="Self.Material" />
-    <EntitySet Name="MaterialCountHistories" EntityType="Self.MaterialCountHistory" />
-    <EntitySet Name="MaterialTypes" EntityType="Self.MaterialType" />
-    <EntitySet Name="Products" EntityType="Self.Product" />
-    <EntitySet Name="ProductCostHistories" EntityType="Self.ProductCostHistory" />
-    <EntitySet Name="ProductMaterials" EntityType="Self.ProductMaterial" />
-    <EntitySet Name="ProductSales" EntityType="Self.ProductSale" />
-    <EntitySet Name="ProductTypes" EntityType="Self.ProductType" />
-    <EntitySet Name="Shops" EntityType="Self.Shop" />
-    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Agent" EntityType="Self.Agent" />
+    <EntitySet Name="AgentPriorityHistory" EntityType="Self.AgentPriorityHistory" />
+    <EntitySet Name="AgentType" EntityType="Self.AgentType" />
+    <EntitySet Name="Material" EntityType="Self.Material" />
+    <EntitySet Name="MaterialCountHistory" EntityType="Self.MaterialCountHistory" />
+    <EntitySet Name="MaterialType" EntityType="Self.MaterialType" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="ProductCostHistory" EntityType="Self.ProductCostHistory" />
+    <EntitySet Name="ProductMaterial" EntityType="Self.ProductMaterial" />
+    <EntitySet Name="ProductSale" EntityType="Self.ProductSale" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" />
+    <EntitySet Name="Shop" EntityType="Self.Shop" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <AssociationSet Name="FK_Agent_AgentType" Association="Self.FK_Agent_AgentType">
-      <End Role="AgentType" EntitySet="AgentTypes" />
-      <End Role="Agent" EntitySet="Agents" />
+      <End Role="AgentType" EntitySet="AgentType" />
+      <End Role="Agent" EntitySet="Agent" />
     </AssociationSet>
     <AssociationSet Name="FK_AgentPriorityHistory_Agent" Association="Self.FK_AgentPriorityHistory_Agent">
-      <End Role="Agent" EntitySet="Agents" />
-      <End Role="AgentPriorityHistory" EntitySet="AgentPriorityHistories" />
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="AgentPriorityHistory" EntitySet="AgentPriorityHistory" />
     </AssociationSet>
     <AssociationSet Name="FK_ProductSale_Agent" Association="Self.FK_ProductSale_Agent">
-      <End Role="Agent" EntitySet="Agents" />
-      <End Role="ProductSale" EntitySet="ProductSales" />
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="ProductSale" EntitySet="ProductSale" />
     </AssociationSet>
     <AssociationSet Name="FK_Shop_Agent" Association="Self.FK_Shop_Agent">
-      <End Role="Agent" EntitySet="Agents" />
-      <End Role="Shop" EntitySet="Shops" />
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Shop" EntitySet="Shop" />
     </AssociationSet>
     <AssociationSet Name="FK_Material_MaterialType" Association="Self.FK_Material_MaterialType">
-      <End Role="MaterialType" EntitySet="MaterialTypes" />
-      <End Role="Material" EntitySet="Materials" />
+      <End Role="MaterialType" EntitySet="MaterialType" />
+      <End Role="Material" EntitySet="Material" />
     </AssociationSet>
     <AssociationSet Name="FK_MaterialCountHistory_Material" Association="Self.FK_MaterialCountHistory_Material">
-      <End Role="Material" EntitySet="Materials" />
-      <End Role="MaterialCountHistory" EntitySet="MaterialCountHistories" />
+      <End Role="Material" EntitySet="Material" />
+      <End Role="MaterialCountHistory" EntitySet="MaterialCountHistory" />
     </AssociationSet>
     <AssociationSet Name="FK_ProductMaterial_Material" Association="Self.FK_ProductMaterial_Material">
-      <End Role="Material" EntitySet="Materials" />
-      <End Role="ProductMaterial" EntitySet="ProductMaterials" />
+      <End Role="Material" EntitySet="Material" />
+      <End Role="ProductMaterial" EntitySet="ProductMaterial" />
     </AssociationSet>
     <AssociationSet Name="FK_Product_ProductType" Association="Self.FK_Product_ProductType">
-      <End Role="ProductType" EntitySet="ProductTypes" />
-      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductType" EntitySet="ProductType" />
+      <End Role="Product" EntitySet="Product" />
     </AssociationSet>
     <AssociationSet Name="FK_ProductCostHistory_Product" Association="Self.FK_ProductCostHistory_Product">
-      <End Role="Product" EntitySet="Products" />
-      <End Role="ProductCostHistory" EntitySet="ProductCostHistories" />
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductCostHistory" EntitySet="ProductCostHistory" />
     </AssociationSet>
     <AssociationSet Name="FK_ProductMaterial_Product" Association="Self.FK_ProductMaterial_Product">
-      <End Role="Product" EntitySet="Products" />
-      <End Role="ProductMaterial" EntitySet="ProductMaterials" />
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductMaterial" EntitySet="ProductMaterial" />
     </AssociationSet>
     <AssociationSet Name="FK_ProductSale_Product" Association="Self.FK_ProductSale_Product">
-      <End Role="Product" EntitySet="Products" />
-      <End Role="ProductSale" EntitySet="ProductSales" />
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductSale" EntitySet="ProductSale" />
     </AssociationSet>
     <AssociationSet Name="MaterialSupplier" Association="Self.MaterialSupplier">
-      <End Role="Material" EntitySet="Materials" />
-      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Material" EntitySet="Material" />
+      <End Role="Supplier" EntitySet="Supplier" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

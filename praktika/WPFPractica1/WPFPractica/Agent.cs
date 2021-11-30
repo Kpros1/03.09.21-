@@ -17,9 +17,9 @@ namespace WPFPractica
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Agent()
         {
-            this.AgentPriorityHistories = new HashSet<AgentPriorityHistory>();
-            this.ProductSales = new HashSet<ProductSale>();
-            this.Shops = new HashSet<Shop>();
+            this.AgentPriorityHistory = new HashSet<AgentPriorityHistory>();
+            this.ProductSale = new HashSet<ProductSale>();
+            this.Shop = new HashSet<Shop>();
         }
     
         public int ID { get; set; }
@@ -36,10 +36,10 @@ namespace WPFPractica
     
         public virtual AgentType AgentType { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AgentPriorityHistory> AgentPriorityHistories { get; set; }
+        public virtual ICollection<AgentPriorityHistory> AgentPriorityHistory { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductSale> ProductSales { get; set; }
+        public virtual ICollection<ProductSale> ProductSale { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Shop> Shops { get; set; }
+        public virtual ICollection<Shop> Shop { get; set; }
     }
 }

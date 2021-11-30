@@ -6,12 +6,13 @@
       xmlns:local="clr-namespace:WPFPractica"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddAgent">
-
+      Title="AddAgent" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -27,28 +28,48 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Наименование"></TextBlock>
-        <TextBlock Text="Тип агентов" Grid.Row="1"></TextBlock>
-        <TextBlock Text="Приоритет" Grid.Row="2"></TextBlock>
-        <TextBlock Text="Логотип" Grid.Row="3"></TextBlock>
-        <TextBlock Text="Адрес" Grid.Row="4"></TextBlock>
-        <TextBlock Text="ИНН" Grid.Row="5"></TextBlock>
-        <TextBlock Text="КПП" Grid.Row="6"></TextBlock>
-        <TextBlock Text="Имя директора" Grid.Row="7"/>
-        <TextBlock Text="Телефон" Grid.Row="8"></TextBlock>
-        <TextBlock Text="Email" Grid.Row="9"></TextBlock>
-        <TextBox  Text="{Binding Title}" Grid.Row="0" Grid.Column="1" Width="400" HorizontalAlignment="Left"></TextBox>
-        <ComboBox  SelectedItem="{Binding AgentType.Title}" Grid.Column="1" Grid.Row="1" Name="ComboBox" Width="400" HorizontalAlignment="left" DisplayMemberPath="AgentTypeID"></ComboBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="3" Width="400" HorizontalAlignment="left"></TextBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="4" Width="400" HorizontalAlignment="left"></TextBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="5" Width="400" HorizontalAlignment="left"></TextBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="6" Width="400" HorizontalAlignment="left"></TextBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="7" Width="400" HorizontalAlignment="left"></TextBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="8" Width="400" HorizontalAlignment="left"></TextBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="9" Width="400" HorizontalAlignment="left"></TextBox>
-        <TextBox  Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="2" Width="400" HorizontalAlignment="left"></TextBox>
-        
-        
-        <Button Content="Сохранить" Grid.ColumnSpan="2"  Width="300" Grid.Row="11" Name="BtnSave" Click="BtnSave_Click" Background="#FFFFE9F9"></Button>
+        <TextBlock Text="Наименование" Margin="15 0 0 0" FontFamily="Century Gothic"> </TextBlock>
+        <TextBlock Text="Тип агентов" Grid.Row="1" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBlock Text="Приоритет" Grid.Row="2" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBlock Text="Логотип" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBlock Text="Адрес" Grid.Row="3" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBlock Text="ИНН" Grid.Row="4" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBlock Text="КПП" Grid.Row="5" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBlock Text="Имя директора" Grid.Row="6" Margin="15 0 0 0" FontFamily="Century Gothic"/>
+        <TextBlock Text="Телефон" Grid.Row="7" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBlock Text="Email" Grid.Row="8" Margin="15 0 0 0" FontFamily="Century Gothic"></TextBlock>
+        <TextBox  Text="{Binding Title}" x:Name="Title" Grid.Row="0" Grid.Column="1" Width="300" HorizontalAlignment="Left"></TextBox>
+        <ComboBox  SelectedValue="{Binding AgentTypeID}" Grid.Column="1" Grid.Row="1" Name="ComboBox" Width="300" HorizontalAlignment="left"  SelectedValuePath="ID"
+                  DisplayMemberPath="Title"></ComboBox>
+        <TextBox  Text="{Binding Priority}" x:Name="Priority" Grid.Column="1" Grid.Row="2" Width="300" HorizontalAlignment="left"></TextBox>
+        <StackPanel
+            Orientation="Vertical"
+            Grid.Column="2"
+            Grid.RowSpan="10">
+
+            <Image Name="PreviewImage"
+                   Source="{Binding Logo}"
+                   Width="200"
+                   Height="150"
+                   DockPanel.Dock="Top" Margin="15 25 0 0" />
+            <Button Grid.Row="9"
+                Grid.ColumnSpan="2"
+                Width="200"
+                Height="30"
+                Content="Выбрать фото"
+                Name="SelectedPhoto"
+                FontFamily="Century Gothic"
+                Click="SelectedPhoto_Click"
+                Margin="15 10 0 0"/>
+        </StackPanel>
+        <TextBox  Text="{Binding Address}" x:Name="Address" Grid.Column="1" Grid.Row="3" Width="300" HorizontalAlignment="left"></TextBox>
+        <TextBox  Text="{Binding INN}" x:Name="INN" Grid.Column="1" Grid.Row="4" Width="300" HorizontalAlignment="left"></TextBox>
+        <TextBox  Text="{Binding KPP}" x:Name="KPP" Grid.Column="1" Grid.Row="5" Width="300" HorizontalAlignment="left"></TextBox>
+        <TextBox  Text="{Binding DirectorName}" x:Name="Name" Grid.Column="1" Grid.Row="6" Width="300" HorizontalAlignment="left"></TextBox>
+        <TextBox  Text="{Binding Phone}" x:Name="Phone"  Grid.Column="1" Grid.Row="7" Width="300" HorizontalAlignment="left"></TextBox>
+        <TextBox  Text="{Binding Email}" x:Name="Email" Grid.Column="1" Grid.Row="8" Width="300" HorizontalAlignment="left"></TextBox>
+
+
+        <Button Content="Сохранить" Grid.ColumnSpan="2"   Width="300" Grid.Row="10" Name="BtnSave" Click="BtnSave_Click" Background="#FFFFE9F9" Margin="0 0 0 0" FontFamily="Century Gothic"></Button>
     </Grid>
 </Page>

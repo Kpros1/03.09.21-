@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище PraktikaModelContainer" CdmEntityContainer="PraktikaEntities">
-    <EntitySetMapping Name="Agents">
+    <EntitySetMapping Name="Agent">
       <EntityTypeMapping TypeName="PraktikaModel.Agent">
         <MappingFragment StoreEntitySet="Agent">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -18,7 +18,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="AgentPriorityHistories">
+    <EntitySetMapping Name="AgentPriorityHistory">
       <EntityTypeMapping TypeName="PraktikaModel.AgentPriorityHistory">
         <MappingFragment StoreEntitySet="AgentPriorityHistory">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -28,7 +28,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="AgentTypes">
+    <EntitySetMapping Name="AgentType">
       <EntityTypeMapping TypeName="PraktikaModel.AgentType">
         <MappingFragment StoreEntitySet="AgentType">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -37,7 +37,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Materials">
+    <EntitySetMapping Name="Material">
       <EntityTypeMapping TypeName="PraktikaModel.Material">
         <MappingFragment StoreEntitySet="Material">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -53,7 +53,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="MaterialCountHistories">
+    <EntitySetMapping Name="MaterialCountHistory">
       <EntityTypeMapping TypeName="PraktikaModel.MaterialCountHistory">
         <MappingFragment StoreEntitySet="MaterialCountHistory">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -63,7 +63,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="MaterialTypes">
+    <EntitySetMapping Name="MaterialType">
       <EntityTypeMapping TypeName="PraktikaModel.MaterialType">
         <MappingFragment StoreEntitySet="MaterialType">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -72,7 +72,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Products">
+    <EntitySetMapping Name="Product">
       <EntityTypeMapping TypeName="PraktikaModel.Product">
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -87,7 +87,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductCostHistories">
+    <EntitySetMapping Name="ProductCostHistory">
       <EntityTypeMapping TypeName="PraktikaModel.ProductCostHistory">
         <MappingFragment StoreEntitySet="ProductCostHistory">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -97,7 +97,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductMaterials">
+    <EntitySetMapping Name="ProductMaterial">
       <EntityTypeMapping TypeName="PraktikaModel.ProductMaterial">
         <MappingFragment StoreEntitySet="ProductMaterial">
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
@@ -106,7 +106,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductSales">
+    <EntitySetMapping Name="ProductSale">
       <EntityTypeMapping TypeName="PraktikaModel.ProductSale">
         <MappingFragment StoreEntitySet="ProductSale">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -117,7 +117,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductTypes">
+    <EntitySetMapping Name="ProductType">
       <EntityTypeMapping TypeName="PraktikaModel.ProductType">
         <MappingFragment StoreEntitySet="ProductType">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -126,7 +126,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Shops">
+    <EntitySetMapping Name="Shop">
       <EntityTypeMapping TypeName="PraktikaModel.Shop">
         <MappingFragment StoreEntitySet="Shop">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -136,7 +136,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Suppliers">
+    <EntitySetMapping Name="Supplier">
       <EntityTypeMapping TypeName="PraktikaModel.Supplier">
         <MappingFragment StoreEntitySet="Supplier">
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -149,7 +149,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="PraktikaModel.sysdiagram">
+      <EntityTypeMapping TypeName="PraktikaModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />

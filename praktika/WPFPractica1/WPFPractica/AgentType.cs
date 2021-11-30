@@ -17,7 +17,7 @@ namespace WPFPractica
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public AgentType()
         {
-            this.Agents = new HashSet<Agent>();
+            this.Agent = new HashSet<Agent>();
         }
     
         public int ID { get; set; }
@@ -25,6 +25,6 @@ namespace WPFPractica
         public string Image { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Agent> Agents { get; set; }
+        public virtual ICollection<Agent> Agent { get; set; }
     }
 }

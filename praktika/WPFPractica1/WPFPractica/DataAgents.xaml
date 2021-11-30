@@ -11,25 +11,59 @@
         <ListView Grid.Row="1" Name="ListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border Margin="5" Background="White" Height="100" BorderBrush="Black" BorderThickness="1">
-                        <Grid Margin="20" Width="auto" >
-                            
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Image Width="100" HorizontalAlignment="Left" Source="{Binding Logo}">
-                         
-                        </Image>
-                            <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center">
-                                <TextBlock Text="{Binding Title}" FontSize="16" Margin="0 0 0 5" ></TextBlock>
-                        <TextBlock  HorizontalAlignment="Center" Margin="0 0 0 2" Text="{Binding AgentTypeID,StringFormat={}{0} продаж за год}"></TextBlock>
-                        <TextBlock  HorizontalAlignment="Center" Margin="0 0 0 2" Text="{Binding Phone}"  FontFamily="Century Gothic" FontSize="20"></TextBlock>
-                        <TextBlock  HorizontalAlignment="Center"  Margin="0 0 0 2" Text="{Binding Priority,StringFormat={}Приоритетность: {0}}"></TextBlock>
-                        <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click" Height="100" Width="150" Margin="2100 0 0 0" ></Button>
-                            </StackPanel>   
+                    <Border  Height="150" BorderBrush="Black" BorderThickness="1">
+                        <Grid  Width="auto" >
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Image Width="100" Height="100" HorizontalAlignment="Left" Margin="15 0 0 0">
+                                <Image.Source>
+                                    <Binding Path="Logo" >
+                                        <Binding.TargetNullValue>
+                                            <ImageSource>Resources/picture.png</ImageSource>
+                                        </Binding.TargetNullValue>
+                                    </Binding>
+                                </Image.Source>
+                            </Image>
+                           
+
+                            <StackPanel Orientation="Vertical" Margin="160 30 0 0">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Title}" DataContext="{Binding AgentType}" FontFamily="Century Gothic" FontSize="15" Margin="20 0 0 0"
+                                                   Foreground="{Binding Rsc}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+
+                                    <TextBlock Text="{Binding Title}" Margin="20 0 0 0" FontFamily="Century Gothic" FontSize="15"
+                                                   Foreground="{Binding Rsc}"/>
+                                </StackPanel>
+                                <StackPanel >
+                                    <TextBlock Text="{Binding Phone}" 
+                                                   FontFamily="Century Gothic" Margin="20 0 0 0" 
+                                                   FontSize="15" Foreground="{Binding Rsc}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="{Binding Priority}" 
+                                               Foreground="{Binding Rsc}"
+                                               ContentStringFormat="Приоритетность: {0}" 
+                                               Margin="10 0 0 0" FontFamily="Century Gothic" 
+                                               FontSize="15"/>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel Width="220" HorizontalAlignment="Right">
+                                <TextBlock
+                                        Text="{Binding Discount}"
+                                        Foreground="{Binding Rsc}"
+                                        FontSize="30" HorizontalAlignment="Right"
+                                        Margin="0 50 190 0"></TextBlock>
+                            </StackPanel>
+
+                            <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click" Height="100" Width="150" FontFamily="Century Gothic" Margin="1710 0 10 0" Background="#FFFFE9F9"></Button>
+                    
                     </Grid>
                     </Border>
-
                 </DataTemplate>
                 
             </ListView.ItemTemplate>
@@ -44,10 +78,10 @@
             <ComboBoxItem>Приоритет агента (по возрастанию)</ComboBoxItem>
             <ComboBoxItem>Приоритет агента (по убыванию)</ComboBoxItem>
         </ComboBox>
-        <ComboBox Width="200" Height="30" Margin="570 0 0 0"  Name="TypeBox" FontFamily="Century Gothic" SelectionChanged="TypeBox_SelectionChanged"></ComboBox>
-        <TextBox Width="300" Height="30" Name="Search" FontFamily="Century Gothic" TextChanged="TextBox_TextChanged"  HorizontalAlignment="Left" Margin="10,0,0,0" Keyboard.KeyDown="test"  />
+        <ComboBox Width="200" Height="30" Margin="570 0 0 0"  Name="TypeBox" FontFamily="Century Gothic" SelectionChanged="TypeBox_SelectionChanged" ></ComboBox>
+        <TextBox Width="300" Height="30" Name="SearchBox"  TextChanged="SearchBox_TextChanged"  HorizontalAlignment="Left" Margin="10,0,0,0" Keyboard.KeyDown="Searchf" />
         <Button Content="Добавить агента" Grid.Row="3" FontFamily="Century Gothic" HorizontalAlignment="Left" Name="BtnAdd" Click="BtnAdd_Click" Width="300" Height="40" Margin="20,0,0,0" Background="#FFFFE9F9"></Button>
-        <Button Content="Удалить" Grid.Row="3" HorizontalAlignment="Right" Name="BtnDelete" Click="BtnDelete_Click" Width="300" Height="40" Margin="0,0,20,0" Background="#FFFFE9F9"></Button>
+        <Button Content="Удалить" Grid.Row="3" FontFamily="Century Gothic" HorizontalAlignment="Right" Name="BtnDelete" Click="BtnDelete_Click" Width="300" Height="40" Margin="0,0,20,0" Background="#FFFFE9F9"></Button>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>

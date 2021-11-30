@@ -14,8 +14,9 @@
         </Grid.RowDefinitions>
         <Grid Background="#B175EE"></Grid>
         <Image Source="Resources/Глазки-save.png" HorizontalAlignment="Left"></Image>
-        <Grid Grid.Row="2" Background="#B175EE"></Grid>
-        <Button Grid.Row="2" Width="300" HorizontalAlignment="Center" Content="назад" Name="Btndel" Click="Btndel_Click" ></Button>
+        <Grid Grid.Row="2"  Background="#B175EE"></Grid>
         <Frame  NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" x:Name="MainFrame"></Frame>
+        <Button Width="100" Content="Назад" HorizontalAlignment="Right" Margin="0 0 10 0" Height="50" Name="BtnBack" Background="#FFFFE9F9" Click="Button_Click" FontFamily="Century Gothic" ></Button>
+        
     </Grid>
 </Window>

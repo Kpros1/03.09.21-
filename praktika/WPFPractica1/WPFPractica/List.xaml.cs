@@ -20,6 +20,7 @@ namespace WPFPractica
     /// </summary>
     public partial class List : Window
     {
+
         private Agent _based = new Agent();
         public List()
         {
@@ -29,21 +30,21 @@ namespace WPFPractica
             //ImportTours();
         }
 
-       // private void ImportTours()
-       // {
+      //  private void ImportTours()
+        //{
            // var images = Directory.GetFiles(@"C:\Users\zhyri\source\repos\WPFPractica\agents");
-           // var based = PraktikaEntities.GetContext().Agents.ToList();
-            //try
-            //{
-              // _based.Logo = File.ReadAllBytes(images.FirstOrDefault(p => p.Contains(_based.Title)));
+           // var based = PracticaZEntities1.GetContext().Agents.ToList();
+           // try
+           // {
+            //   _based.Logo = File.ReadAllBytes(images.FirstOrDefault(p => p.Contains(_based.Title)));
            // }
            // catch (Exception ex)
-           // {
-                //Console.WriteLine(ex.Message);
-            //}
-          // PraktikaEntities.GetContext().Agents.Add(_based);
+            //{
+           //     Console.WriteLine(ex.Message);
+         //   }
+       //    PracticaZEntities1.GetContext().Agents.Add(_based);
             
-        //}
+     //   }
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
           
@@ -51,7 +52,14 @@ namespace WPFPractica
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
-          
+            if (MainFrame.CanGoBack)
+            {
+                BtnBack.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                BtnBack.Visibility = Visibility.Hidden;
+            }
         }
 
         private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
@@ -59,9 +67,11 @@ namespace WPFPractica
 
         }
 
-        private void Btndel_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             FrameWindow.MainFrame.Navigate(new DataAgents());
         }
+
+       
     }
 }

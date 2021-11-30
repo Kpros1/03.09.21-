@@ -17,9 +17,9 @@ namespace WPFPractica
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
-            this.ProductCostHistories = new HashSet<ProductCostHistory>();
-            this.ProductMaterials = new HashSet<ProductMaterial>();
-            this.ProductSales = new HashSet<ProductSale>();
+            this.ProductCostHistory = new HashSet<ProductCostHistory>();
+            this.ProductMaterial = new HashSet<ProductMaterial>();
+            this.ProductSale = new HashSet<ProductSale>();
         }
     
         public int ID { get; set; }
@@ -34,10 +34,10 @@ namespace WPFPractica
     
         public virtual ProductType ProductType { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductCostHistory> ProductCostHistories { get; set; }
+        public virtual ICollection<ProductCostHistory> ProductCostHistory { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductMaterial> ProductMaterials { get; set; }
+        public virtual ICollection<ProductMaterial> ProductMaterial { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductSale> ProductSales { get; set; }
+        public virtual ICollection<ProductSale> ProductSale { get; set; }
     }
 }
