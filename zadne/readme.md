@@ -1,4 +1,5 @@
-`using System;
+```
+using System;
 using CoreLib1;
 
 namespace App3
@@ -12,9 +13,10 @@ namespace App3
         }
     }
 }
-`
+```
 
-`using System;
+```
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +34,6 @@ namespace CoreLib1
         }
     }
 }
-`
+
 
 
