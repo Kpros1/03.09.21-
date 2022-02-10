@@ -35,5 +35,6 @@ namespace CoreLib1
     }
 }
 
+![Белянкинклассы](https://user-images.githubusercontent.com/90038602/153351448-db1bf6cd-d705-41e9-9e70-6c3213a30f64.png)
 
 
